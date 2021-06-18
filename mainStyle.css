@@ -1,0 +1,568 @@
+/* -------------------------------------- Daoud Anas / Aissaoui Moetez - 2CS4 ------------------------------------------------------ */
+
+/*--------------------------------GENERAL------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto Condensed' , 'Arial';
+    font-size: 22px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%;
+}
+
+.clearfix {zoom:1}
+
+.clearfix:after{
+    content: '.';
+    clear:both;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
+
+h1,h2,h3{  
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+
+h1 span{
+    color: #f7d30f;
+    font-weight: 550;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #f7d30f;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*ICONS*/
+
+.icon-small{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #f7d30f;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+/*LINKS*/
+
+a:link,
+a:visited{
+    color:#f7d30f;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #f7d30f;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+/*--------------------------------NAVBAR + HEADER - PAGE1 - ----------------------------------------------------------------------*/
+
+
+/* Main text*/
+.main-text-box{
+    text-align: center;
+    margin: 130px auto;
+    font-style: italic;
+}
+
+/*HEADER*/
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)), url(img/back2.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*LOGO*/
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 40px;
+}
+
+
+/*NAVBAR*/
+
+.nav-main{
+    float: right;
+    list-style: none;
+    margin-top: 75px;
+}
+
+.nav-main li{
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.nav-main li a:link,
+.nav-main li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ;
+}
+
+.nav-main li a:hover,
+.nav-main li a:active{
+    border-bottom: 2px solid #f7d30f;
+}
+
+/*Bouton Learn More*/
+
+/*Class Parent Btn*/
+
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s, border 0.2s,color 0.2s;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #a6a7af;
+}
+
+/*Class Enfant btn-ghost*/
+
+.btn-ghost:link,
+.btn-ghost:visited
+{
+    border: 1px solid #cccac8;
+    color: #cccac8;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #a6a7af;
+    color: #fff;;
+}
+
+
+
+
+/*--------------------------------WHY US - PAGE2 - -------------------------------------------------------------------------------*/
+
+/*Container*/
+
+.why{
+    margin: auto 430px;
+    width: 30%;
+    display: block;
+}
+
+/*Format de chaque paragraphe*/
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align-last: center;
+}
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+
+/*Liste Why Choose Us*/
+
+.why-list{
+    list-style: none;
+    list-style-position: outside;
+    display: block;
+}
+
+/*--------------------------------HOUSES PHOTOS - PAGE3 - -------------------------------------------------------------------------------*/
+
+.section-houses{
+    padding: 0;
+}
+
+.houses-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.houses-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.house-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.house-photo img{
+    width: 100%;
+    opacity: 0.7;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.house-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/*--------------------------------SEARCH - PAGE4 - -------------------------------------------------------------------------------*/
+
+.section-search{
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 80px;  
+  }
+  
+.section-search p a{
+    color: #f7d30f;
+    font-weight: 550;
+}
+  
+/*--------------------------------TESTIMONIALS - PAGE5 - -------------------------------------------------------------------------------*/
+
+/*TESTIMONIAL CONTENT*/
+
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin: top 40px; ;
+}
+
+blockquote::before{
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+}
+
+/*Persons*/
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+       height: 45px;
+       border-radius: 50%;
+       margin-right: 10px;
+
+}
+
+/*--------------------------------CONTACT US - PAGE6 - -------------------------------------------------------------------------------*/
+
+
+.section-form{
+    background-color: rgb(245, 245, 245);
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input,select,textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+/*--------------------------------FOOTER - SOCIALS - PAGE7 - -------------------------------------------------------------------------------*/
+
+
+footer{
+    background-color: rgb(53, 53, 53);
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin:0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 170%;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+}
+
+
+.fb,.twitter,.insta,.tiktok{
+    transition: color 0.2s;
+}
+
+.fb:hover,
+.fb:active{
+    color: #1877f2;
+
+}
+
+.twitter:hover,
+.twitter:active{
+    color: #1da1f2;
+}
+
+.insta:hover,
+.insta:active{
+    color: #c32aa3;
+}
+
+.tiktok:hover,
+.tiktok:active{
+    color: #ee1d52;
+}
+
+/*--------------------------------LOGIN - SIGN UP - MODAL - -------------------------------------------------------------------------------*/
+
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*Bouton Close Modal*/
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/*MODAL POPUP PARENT*/
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 40%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+
+.modal h2{
+    margin-top: 15px;
+}
+
+.modal h2:after{
+    margin-top: 10px;
+}
+
+/*MODAL POPUP SIGN UP*/
+
+.modal--signup{
+    width: 70%;
+    height: auto;
+    display: inline-block;
+}
+
+/*FORMULAIRE INSIDE MODAL*/
+
+.modal-form{
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.modal-form label,input{
+    margin-bottom: 10px;
+}
+
+.sign-up-modal{
+    font-size: smaller;
+    text-align: center;
+}
+
+.last-signup{
+    float: right;
+}
+
+.modal-form .inp {
+    width: 90%;
+    margin-bottom: 25px;
+}
+.modal-form i {
+    float: right;
+    margin-top: 5px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+/*SIGN UP FORM SUR DEUX TRANCHES*/
+.form2{
+    float: right;
+    width: 48%;
+}
+
+.form1{
+    width: 48%;
+    float: left;
+}
+
+.pass{
+    margin-top: 12px;
+}
+
+/*OVERLAY BLUR BACKGROUND*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    transition: all 0.5s;
+}
+
+/*------------------------------------------------------END------------------------------------------------------------------------*/
+
+
+/* -------------------------------------- Daoud Anas / Aissaoui Moetez - 2CS4 ------------------------------------------------------ */
+
+
+
+

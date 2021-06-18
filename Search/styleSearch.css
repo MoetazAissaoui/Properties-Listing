@@ -1,0 +1,345 @@
+/* -------------------------------------- Daoud Anas / Aissaoui Moetez - 2CS4 ------------------------------------------------------ */
+
+/*-----------------------------GENERAL--------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus{outline: 0;}
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-size: 14px
+}
+
+
+.all{
+    margin-top: 70px;
+}
+
+
+/*------------LES BOUTONS-------------------*/
+a {
+    text-decoration: none !important;
+    background-color: transparent
+}
+
+.checkbox-btn {
+    position: relative
+}
+
+.checkbox-btn input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0
+}
+
+.checkbox-btn input:checked~.btn {
+    border-color: #7a8186;
+    background-color: #7a8186;
+    color: #fff
+}
+
+.btn-light {
+    display: inline-block;
+    font-weight: 600;
+    color: #343a40;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #eee;
+    border: 1px solid #eee;
+    padding: 0.45rem 0.85rem;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    border-radius: 0.37rem;
+    margin: 5px;
+}
+
+.btn-light:hover {
+    background-color: #fff;
+    border-color: #989898
+}
+
+.btn-medium {
+    font-size: 12px;
+    padding: 10px 22px;
+    display: inline-block;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    border: 1px solid #f7d30f;
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+.highlight-button:hover {
+    background-color: #f7d30f;
+    border: 2px solid #f7d30f;
+    color: #fff
+}
+
+
+/*--------------------------WELCOME TEXT-------------------------------------------------------------------*/
+
+.wel{
+    margin-top: 25px;
+    margin-left: 45px;
+    font-style: italic;
+    
+}
+
+.wel h3{
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.wel span{
+    color: #f7d30f;
+    font-weight: 700;
+}
+
+/*--------------------------------------FILTER LIST---------------------------------------------------------*/
+
+.filter-group {
+    border-bottom: 1px solid #e4e4e4
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.37rem
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #3d4b53;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.card-header i{
+    color:#f7d30f ;
+}
+
+.filter-group .card-header {
+    border-bottom: 0
+}
+
+.icon-control {
+    margin-top: 6px;
+    float: right;
+    font-size: 80%
+}
+
+.list-menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.list-menu li a {
+    color: #343a40;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.list-menu a:hover{
+    color: #f7d30f;
+}
+
+.card-header h5{
+   color: #f7d30f;
+   text-transform: uppercase;
+}
+
+.form-row input{
+    border-color: #f7d30f;
+    margin-bottom: 10px;
+}
+
+.form-row label{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.card-body a{
+    font-size: 15px;
+}
+
+/*-------------------------------------------HOUSES--------------------------------------------------------------------------------*/
+
+.house {
+    padding: 20px;
+    margin:0 20px 20px 20px;
+    background-color: #3d4b53;
+    border-radius: 5px;
+    position: relative
+}
+
+.house h5{
+    color: #f7d30f;
+    text-transform: uppercase;
+}
+
+.house h6{
+    text-transform: uppercase;
+    color: #f1e59c;
+    margin-top: 10px;
+}
+
+.house img{
+    border: 5px solid #faf9cc;
+}
+
+.about span {
+    color: #faf9cc;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about {
+    margin-top: 12px
+}
+
+
+/*---------------------------------------------SELL YOU PROPERTY MODAL------------------------------------------------------------*/
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close-sell-house {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.sell-house {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 70%;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.5s;
+}
+
+.sell-house h2{
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+
+.sell-house h2:after{
+    display: block;
+    height: 2px;
+    background-color: #f7d30f;
+    content: " ";
+    width: 100px;
+    margin: 12px auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 100;
+    transition: all 0.5s;
+}
+  
+.sell-house-container input{
+    border-color: #f7d30f;
+    margin: auto;
+}
+
+.card-body input[type="button"] {
+    font-size: 15px;
+}
+
+.sell-house-container label{
+    margin: auto;
+    font-size: 19px;
+    color: #3d4b53;
+}
+
+.sell-house-container{
+    text-transform: uppercase;
+}
+
+.form-check{
+    margin: 10px 10px;
+}
+
+#sell,#send{
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: white;
+    background-color: #f7d30f;
+    font-weight: 700;
+}
+
+#sell:hover,
+#send:hover{
+    background-color: transparent;
+    color: #3d4b53;
+}
+
+#send{
+    margin-top: 10px;
+}
+
+#labelProperty{
+    font-size: 15px;
+}
+
+
+/* -------------------------------------- END -------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------- Daoud Anas / Aissaoui Moetez - 2CS4 ------------------------------------------------------ */
+
+
